@@ -19,7 +19,7 @@ router.get("/:id", (request, response, next) => {
 
 router.post("/", (request, response, next) => {
     queries.create(request.body).then(coffee => {
-        response.status(201).json({coffee});
+        response.status(201).json({coffee: coffee[0]});
     }).catch(next);
 });
 

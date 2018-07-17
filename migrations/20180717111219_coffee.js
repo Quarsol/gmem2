@@ -3,8 +3,7 @@ exports.up = function(knex) {
     table.increments();
     table.string('name');
     table.string('roaster');
-    table.integer('aroma')
-    table.timestamps(true, true);
+    table.integer('aroma');
   })
 };
 
